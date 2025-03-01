@@ -25,7 +25,7 @@ exports.createInvite = async (req, res) => {
         await newInvite.save();
 
         res.json({  
-            inviteLink: `https://globetrotter-frontend.onrender.com/api/invite/${inviteCode}`,
+            inviteLink: `https://globetrotter-frontend.onrender.com/invite/${inviteCode}`,
             inviterUsername: username,
             inviterScore: user.score
         });
