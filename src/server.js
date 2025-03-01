@@ -3,6 +3,8 @@ const express = require("express");
 const cors = require("cors");
 const connectDB = require("./config/db"); // Import MongoDB connection function
 const destinationRoutes = require("./routes/destinationRoutes");
+const userRoutes = require("./routes/userRoutes");
+const inviteRoutes = require("./routes/inviteRoutes");
 
 const app = express();
 const PORT = process.env.PORT || 5000;
@@ -16,6 +18,8 @@ app.use(express.json());
 
 // Routes
 app.use("/api/destinations", destinationRoutes);
+app.use("/api/users", userRoutes);
+app.use("/api/invite", inviteRoutes);
 
 app.get("/", (req, res) => {
     res.send("Welcome to Globetrotter Backend!");

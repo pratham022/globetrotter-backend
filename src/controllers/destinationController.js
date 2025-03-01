@@ -75,7 +75,7 @@ exports.validateAnswer = async (req, res) => {
 
         return res.json({
             correct: isCorrect,
-            ...(isCorrect ? {} : { correctAnswer: correctDestination.city }), // Send correct answer only if incorrect
+            ...(isCorrect ? {} : { correctAnswer: correctDestination.city, correctAnswerCountry: correctDestination.country }), // Send correct answer only if incorrect
             funFacts: correctDestination.fun_facts,
             trivia: correctDestination.trivia
         });
