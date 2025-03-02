@@ -11,6 +11,7 @@ This is the **backend** of the "The Globetrotter Challenge" game, handling game 
 - **Deployment:** Render
 
 ## 🎯 Features
+✅ We have seeded data for over 100 different cities across the globe. So users can get enough random cities as they play the game. 
 
 ✅ Create & validate invite links
 
